@@ -7,11 +7,12 @@ var alertName = alert(`Whassup, ${lastName}!`);
 // Asks for users birthday
 var birthday = prompt("Gimme your birthday.\nMM/DD/YYYY");
 // Inserts users birthday into Date object
-var birthdayDate = new Date(birthday);
+var birthdayDate = new Date(birthday); //NICE!!! -RJH
 // Retrieves the month day and year and assigns them in a string to confirmDate
 var month = birthdayDate.getUTCMonth() + 1;
 var day = birthdayDate.getUTCDate();
 var year = birthdayDate.getUTCFullYear();
 var confirmDate = `${month} / ${day} / ${year}`;
 // Asks user to confirm their birthday
-var confirmBirthday = confirm(`Is this correct?\n${confirmDate}`);
+var confirmBirthday = confirm(`Is this correct?\n${confirmDate}`); //Good work using string interpolation! This is where the tough part comes in.
+//Great use of comments for your code!
