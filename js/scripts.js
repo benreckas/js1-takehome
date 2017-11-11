@@ -1,3 +1,6 @@
+// Establish and empty array of to do items.
+var arrToDo = [];
+
 // Create an array with 3 indexes, each of those will hold a sub-array
 for (let i = 0; arrToDo.length <= 2; i++) {
   // Ask user for to do item
@@ -25,12 +28,3 @@ for (let i = 0; i < (arrToDo.length - 1); i++) {
 };
 
 console.log("Final Array", arrToDo);
-
-    break;
-  case "white":
-    alert("Follow the white rabbit.");
-    break;
-  default:
-    alert(`Cool, your favrite color is ${favColor}!`);
-    break;
-}
