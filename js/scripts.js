@@ -1,43 +1,30 @@
-// Prompt user for name and store it in var name
-var name = prompt("What's your name?");
-// Prompt user for favorite color and store it in var favColor
-var favColor = prompt("What's your favorite color?\nEnter custom color or choose one from below!\nRed\nOrange\nYellow\nGreen\nBlue\nPurple\nPink\nBlack\nGray\nWhite", "Favorite Color");
-// change any entry to all lower case letters
-favColor = favColor.toLowerCase();
+// Establish and empty array of to do items.
+var arrToDo = [];
 
-// run entry through logic switch and alert a response based on entry
-switch(favColor) {
-  case "red":
-    alert("Little red corvette!");
-    break;
-  case "orange":
-    alert("Orange you glad I didn't say banana.");
-    break;
-  case "yellow":
-    alert("Yellow everybody this is Purge.");
-    break;
-  case "green":
-    alert("...eggs and ham");
-    break;
-  case "blue":
-    alert("dabu-di dabe-die.");
-    break;
-  case "purple":
-    alert("Purple rain. RIP Prince.");
-    break;
-  case "pink":
-    alert("Really? Nobody's favorite color is pink.");
-    break;
-  case "black":
-    alert("MIB");
-    break;
-  case "gray":
-    alert("Mashed potatoes and gray v. #baddadjoke");
-    break;
-  case "white":
-    alert("Follow the white rabbit.");
-    break;
-  default:
-    alert(`Cool, your favrite color is ${favColor}!`);
-    break;
-}
+// Create an array with 3 indexes, each of those will hold a sub-array
+for (let i = 0; arrToDo.length <= 2; i++) {
+  // Ask user for to do item
+  let item = prompt("Tell me the something you want to do this weekend.", "Ice fishing");
+  // Change response to lowercase
+  item = item.toLowerCase();
+  // Ask user how many days it will take to complete it
+  let deadline = prompt(`How many days will it take you to finish ${item}?`, "1");
+  // Parse string of number into integer
+  deadline = parseInt(deadline);
+  // Place both user responses into an array and push it to the main array
+  arrToDo.push([item, deadline]);
+  // By comparing the amount of time two item will take to complete,
+  // sort the sub arrays within the to do list from shortest to longest.
+  arrToDo.sort((a, b) => {return a[1] - b[1]});
+};
+
+console.log("This will take you the longest", arrToDo[2]);
+
+// Loop through the first two indexes of the array and add the sring "done" to the sub array,
+// then alert the user that those tasks are completed.
+for (let i = 0; i < (arrToDo.length - 1); i++) {
+  arrToDo[i].push("Done");
+  alert(`Nice job, you're done with: ${arrToDo[i][0]}`);
+};
+
+console.log("Final Array", arrToDo);
