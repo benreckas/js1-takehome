@@ -9,7 +9,7 @@ for (let i = 0; arrToDo.length <= 2; i++) {
   item = item.toLowerCase();
   // Ask user how many days it will take to complete it
   let deadline = prompt(`How many days will it take you to finish ${item}?`, "1");
-  // Parse srink number into integer
+  // Parse string of number into integer
   deadline = parseInt(deadline);
   // Place both user responses into an array and push it to the main array
   arrToDo.push([item, deadline]);
