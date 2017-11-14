@@ -28,3 +28,32 @@ for (let i = 0; i < (arrToDo.length - 1); i++) {
 };
 
 console.log("Final Array", arrToDo);
+
+
+
+// In Class Solution
+
+// var todos = [];
+// for (let i = 0; i <= 3; i++) {
+//   let todo = [];
+//   var userTodo = prompt('What is something you want to get done?', 'Netflix');
+//   var dueDate = prompt('How many days will it take you?', '1');
+//   dueDate = parseInt(dueDate);
+//   if(dueDate == NaN) {
+//     alert("OH nooooo...");
+//   }
+//   todo.push(userTodo, dueDate);
+//   todos.push(todo);
+//   if(todos.length == 3) {
+//     break;
+//   } else {
+//     continue;
+//   }
+// }
+//
+// let v = 0;
+// while(v <= 2) {
+//   todos.sort(todos[v][1]);
+//
+// }
+// This is unfinished. Keep going. 
