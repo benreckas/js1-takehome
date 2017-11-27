@@ -20,4 +20,3 @@ function mem() {
 
 function recall() {
   view.innerHTML = store;
-};
