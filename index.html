@@ -5,35 +5,13 @@
     <title>JS1 Take Home</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="flex">
-    <div class="calculator">
-      <div class="view-window"><p id="calcView"></p></div>
-      <div class="operators">
-        <input type="button" id="keys" value="+" onclick='calcView("+")'>
-        <input type="button" id="keys" value="-" onclick='calcView("-")'>
-        <input type="button" id="keys" value="*" onclick='calcView("*")'>
-        <input type="button" id="keys" value="/" onclick='calcView("/")'>
-      </div>
-      <div class="column-left">
-        <input type="button" id="keys" value="1" onclick='calcView("1")'>
-        <input type="button" id="keys" value="2" onclick='calcView("2")'>
-        <input type="button" id="keys" value="3" onclick='calcView("3")'>
-        <input type="button" id="keys" value="4" onclick='calcView("4")'>
-        <input type="button" id="keys" value="5" onclick='calcView("5")'>
-        <input type="button" id="keys" value="6" onclick='calcView("6")'>
-        <input type="button" id="keys" value="7" onclick='calcView("7")'>
-        <input type="button" id="keys" value="8" onclick='calcView("8")'>
-        <input type="button" id="keys" value="9" onclick='calcView("9")'>
-        <input type="button" id="keys" value="." onclick='calcView(".")'>
-        <input type="button" id="keys" value="0" onclick='calcView("0")'>
-        <input type="button" id="keys" value="c" onclick='calcView("c")'>
-      </div>
-      <div class="column-right">
-        <input type="button" id="keys" value="store" onclick='mem()'>
-        <input type="button" id="keys" value="recall" onclick='recall()'>
-        <input type="button" id="keys" value="=" onclick='calc()'>
-      </div>
-    </div>
+  <body>
+    <input type="button" value="Add Content" id="input" class="" onclick="addContent()">
+    <br>
+    <input class ="color" type="color" value="#ffffff" id="color" onclick="addColor()">
+    <main>
+
+    </main>
     <script src="js/scripts.js" type="text/javascript"></script>
   </body>
 </html>
