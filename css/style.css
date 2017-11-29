@@ -15,11 +15,7 @@ p {
   margin: 0 auto;
 }
 
-body {
-  background-color: #ffffff;
-}
-
-h1, h5 {
+h1 {
   font-family: sans-serif;
   text-transform: uppercase;
 }
